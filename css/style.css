@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #000;
+    color: #a78bfa;
+    font-family: "Hammersmith One";
+    overflow: hidden;
+}
+
+#header {
+    height: 72px;
+    box-sizing: border-box;
+    padding: 10px 24px;
+    border-bottom: 1px solid #2e1065;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: #c4b5fd;
+}
+
+#subtitle {
+    margin: 2px 0 0;
+    font-size: 13px;
+    color: #8b7bc0;
+}
+#content {
+    display: flex;
+    height: calc(100vh - 72px);
+}
+
+#leftSide {
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+#rightPanel {
+    width: 42%;
+    box-sizing: border-box;
+    padding: 14px 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    border-left: 1px solid #2e1065;
+}
+
+#mainChart {
+    flex: 0 0 48%;
+    position: relative;
+}
+
+#chartsRow {
+    flex: 1;
+    display: flex;
+    min-height: 0;
+    border-top: 1px solid #2e1065;
+}
+
+.block {
+    box-sizing: border-box;
+    padding: 10px 14px 6px;
+    min-width: 0;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#chartsRow .block {
+    width: 50%;
+}
+
+.block h2 {
+    margin: 0;
+    font-size: 15px;
+    color: #c4b5fd;
+}
+
+.note {
+    margin: 2px 0 4px;
+    font-size: 12px;
+    line-height: 1.35;
+    color: #8b7bc0;
+}
+
+.chart {
+    flex: 1;
+    min-height: 0;
+}
+
+#legend {
+    position: absolute;
+    left: 14px;
+    bottom: 24px;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.82);
+    border: 1px solid #4c1d95;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 12px;
+    color: #ddd6fe;
+}
+
+#legend b {
+    display: block;
+    margin-bottom: 4px;
+    color: #a78bfa;
+}
+
+#legend div {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+
+#legend i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+#legend small {
+    display: block;
+    margin-top: 6px;
+    color: #8b7bc0;
+}
+
+
+#summary {
+    display: flex;
+    gap: 10px;
+}
+
+.info {
+    flex: 1;
+    border: 1px solid #4c1d95;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+.info b {
+    display: block;
+    font-size: 26px;
+    line-height: 1.1;
+    color: #c4b5fd;
+}
+
+.info span {
+    font-size: 12px;
+    color: #8b7bc0;
+}
+
+#tableBlock {
+    flex: 1;
+    padding-left: 0;
+    padding-right: 0;
+    border-top: 1px solid #2e1065;
+}
+
+#tableHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+#resetBtn {
+    display: none;
+    font: inherit;
+    font-size: 12px;
+    color: #c4b5fd;
+    background: transparent;
+    border: 1px solid #6d28d9;
+    border-radius: 999px;
+    padding: 4px 12px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#resetBtn:hover {
+    background: #1e1b4b;
+}
+
+#tableContainer {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+#tableData {
+    display: none;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    color: #ddd6fe;
+}
+
+#tableData th {
+    position: sticky;
+    top: 0;
+    background: #000;
+    text-align: left;
+    padding: 6px 10px;
+    color: #a78bfa;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #6d28d9;
+}
+
+#tableData td {
+    padding: 6px 10px;
+    border-bottom: 1px solid #2e1065;
+    vertical-align: top;
+}
+
+#tableData td:first-child {
+    white-space: nowrap;
+}
+
+#tableData tbody tr:hover {
+    background: #1e1b4b;
+}
+
+@media (max-width: 900px) {
+    body { overflow: auto; height: auto; }
+    #content { display: block; height: auto; }
+    #leftSide, #rightPanel { width: 100%; display: block; }
+    #mainChart { height: 380px; }
+    #chartsRow { display: block; }
+    #chartsRow .block { width: 100%; height: 280px; }
+    #tableBlock { height: 360px; }
+    #rightPanel { border-left: 0; }
+}

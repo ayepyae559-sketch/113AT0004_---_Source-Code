@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Purple World</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hammersmith One">
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id="main">
+    <div id='header'>
+        <h1>Purple World</h1>
+        <p id='subtitle'></p>
+    </div>
+
+    <div id='content'>
+        <div id='leftSide'>
+            <div id='mainChart'>
+                <div id='legend'></div>
+            </div>
+            <div id='chartsRow'>
+                <div class='block'>
+                    <h2>Concerts per year</h2>
+                    <p class='note' id='noteYear'></p>
+                    <div class='chart' id='yearChart'></div>
+                </div>
+                <div class='block'>
+                    <h2>Top 10 countries</h2>
+                    <p class='note' id='noteCountry'></p>
+                    <div class='chart' id='countryChart'></div>
+                </div>
+            </div>
+        </div>
+
+        <div id='rightPanel'>
+            <div id='summary'></div>
+            <div class='block' id='tableBlock'>
+                <div id='tableHead'>
+                    <div>
+                        <h2 id='panelTitle'>Concert list</h2>
+                        <p class='note' id='panelSub'></p>
+                    </div>
+                    <button id='resetBtn'>Clear Data</button>
+                </div>
+                <div id='tableContainer'>
+                    <table id='tableData'>
+                        <thead>
+                            <tr><th>Date</th><th>Concert</th><th>City</th></tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const colors = ['#DCB8FF', '#C68AFF', '#A94AFF', '#9A2EFF', '#9A2EFF'];
+        const labels = ['1 or 2', '3 to 5', '6 to 9', '10 to 29', '30 or more'];
+
+        const text = '#c4b5fd';
+        const grid = '#2e1065';
+        const all_color = '#6d28d9';    
+        const pick_color = '#f472b6'; 
+        
+        let map = null;
+        let mapReady = false;
+        let byCountry = {};
+        let allData = [];
+        let selected = null;           
+        let years = [];
+
+        const yearChart = echarts.init(document.getElementById('yearChart'));
+        const countryChart = echarts.init(document.getElementById('countryChart'));
+       
+        function describeYears(list) {
+            const parts = [];
+            let start = null, prev = null;
+            for (let i = 0; i <= list.length; i++) {
+                const y = list[i];
+                if (start !== null && y !== prev + 1) {
+                    parts.push(start === prev ? String(start) : start + ' to ' + prev);
+                    start = null;
+                }
+                if (y !== undefined && start === null) start = y;
+                prev = y;
+            }
+            return parts.join(', ');
+        }
+
+        function yearOf(concert) {
+            return Number(concert['date'].slice(0, 4));
+        }
+
+        const tooltipStyle = {
+            backgroundColor: '#14081f',
+            borderColor: '#6d28d9',
+            textStyle: { color: '#ddd6fe', fontSize: 12 }
+        };
+
+        function createLegend() {
+            let html = '<b>Concerts per country</b>';
+            for (let i = 0; i < colors.length; i++) {
+                html += '<div><i style="background:' + colors[i] + '"></i>' + labels[i] + '</div>';
+            }
+            html += '<small>Grey = no concerts. Zoom in for Hong Kong and Macau.</small>';
+            $('#legend').html(html);
+        }
+
+        function createSummary() {
+            let total = 0;
+            const cities = {};
+            for (let i = 0; i < allData.length; i++) {
+                total += allData[i]['count'];
+                for (let j = 0; j < allData[i]['value'].length; j++) {
+                    cities[allData[i]['value'][j]['city']] = true;
+                }
+            }
+            const html =
+                '<div class="info"><b>' + total + '</b><span>concerts played</span></div>' +
+                '<div class="info"><b>' + allData.length + '</b><span>countries and regions</span></div>' +
+                '<div class="info"><b>' + Object.keys(cities).length + '</b><span>cities</span></div>';
+            $('#summary').html(html);
+            return total;
+        }
+
+        function drawYearChart() {
+            const allCounts = years.map(() => 0);
+            const pickCounts = years.map(() => 0);
+            for (let i = 0; i < allData.length; i++) {
+                for (let j = 0; j < allData[i]['value'].length; j++) {
+                    const idx = years.indexOf(yearOf(allData[i]['value'][j]));
+                    allCounts[idx]++;
+                    if (allData[i]['country'] === selected) pickCounts[idx]++;
+                }
+            }
+
+            const series = [{
+                name: 'All countries',
+                type: 'bar',
+                barGap: '-100%',            
+                barMaxWidth: 18,
+                data: allCounts,
+                itemStyle: { color: all_color, borderRadius: [3, 3, 0, 0] }
+            }];
+            const legendData = ['All countries'];
+            if (selected) {
+                series.push({
+                    name: selected,
+                    type: 'bar',
+                    barMaxWidth: 18,
+                    data: pickCounts,
+                    itemStyle: { color: pick_color, borderRadius: [3, 3, 0, 0] }
+                });
+                legendData.push(selected);
+            }
+
+            const empty = [];
+            for (let i = 0; i < years.length; i++) {
+                if (allCounts[i] === 0) empty.push(years[i]);
+            }
+            if (selected) {
+                const n = pickCounts.filter(v => v > 0).length;
+                $('#noteYear').text('Pink bars: ' + selected + ' played in ' + n + (n === 1 ? ' year' : ' years') + '. Purple bars are all countries.');
+            } else {
+                $('#noteYear').text('No concerts in ' + describeYears(empty) + '. Click a country to compare it.');
+            }
+
+            yearChart.setOption({
+                textStyle: { color: text },
+                legend: { data: legendData, top: 0, right: 0, itemWidth: 12, itemHeight: 12, textStyle: { color: text, fontSize: 11 } },
+                grid: { left: 44, right: 10, top: 28, bottom: 36 },
+                tooltip: Object.assign({ trigger: 'axis', axisPointer: { type: 'shadow' } }, tooltipStyle),
+                xAxis: {
+                    type: 'category',
+                    data: years,
+                    name: 'Year',
+                    nameLocation: 'middle',
+                    nameGap: 24,
+                    nameTextStyle: { color: text, fontSize: 11 },
+                    axisLine: { lineStyle: { color: '#4c1d95' } },
+                    axisLabel: { color: text, fontSize: 10, interval: 0, formatter: v => "'" + String(v).slice(2) }
+                },
+                yAxis: {
+                    type: 'value',
+                    name: 'Concerts',
+                    nameTextStyle: { color: text, fontSize: 11 },
+                    axisLabel: { color: text, fontSize: 10 },
+                    splitLine: { lineStyle: { color: grid } }
+                },
+                series: series
+            }, true);
+        }
+
+        function drawCountryChart() {
+            const top = allData.slice(0, 10);
+            let total = 0;
+            for (let i = 0; i < allData.length; i++) total += allData[i]['count'];
+
+            const slice_colors = ['#5b21b6', '#6d28d9', '#7c3aed', '#8b5cf6', '#9d78f7','#a78bfa', '#b79af5', '#c4b5fd', '#d4c4fb', '#e4d9fd'];
+            const data = top.map((d, i) => ({
+                name: d['country'],
+                value: d['count'],
+                itemStyle: { color: d['country'] === selected ? pick_color : slice_colors[i] }
+            }));
+            let others = total;
+            for (let i = 0; i < top.length; i++) others -= top[i]['count'];
+            data.push({ name: 'Other (' + (allData.length - top.length) + ')', value: others, itemStyle: { color: '#4a4560' } });
+
+            const share = Math.round((top[0]['count'] + top[1]['count'] + top[2]['count']) / total * 100);
+            $('#noteCountry').text(top[0]['country'] + ', ' + top[1]['country'] + ' and ' + top[2]['country'] + ' make up ' + share + '% of all concerts. Click a slice to select a country.');
+
+            countryChart.setOption({
+                textStyle: { color: text },
+                title: {                                  
+                    text: String(total), subtext: 'concerts',
+                    left: '33%', top: 'center', textAlign: 'center', itemGap: 0,
+                    textStyle: { color: text, fontSize: 22, fontWeight: 'bold' },
+                    subtextStyle: { color: '#8b7bc0', fontSize: 11 }
+                },
+                legend: {
+                    orient: 'vertical', right: 0, top: 'middle', selectedMode: false,
+                    itemWidth: 10, itemHeight: 10, itemGap: 5,
+                    textStyle: { color: text, fontSize: 11 }
+                },
+                tooltip: Object.assign({ trigger: 'item', formatter: '{b}<br/>{c} concerts ({d}%)' }, tooltipStyle),
+                series: [{
+                    type: 'pie',
+                    radius: ['45%', '72%'],             
+                    center: ['33%', '50%'],
+                    label: { show: false },
+                    labelLine: { show: false },
+                    itemStyle: { borderColor: '#000', borderWidth: 2 },
+                    emphasis: { scaleSize: 6 },
+                    data: data
+                }]
+            }, true);
+        }        
+
+        function setTable(data) {
+            const values = data['value'];
+            const firstYear = yearOf(values[0]);
+            const lastYear = yearOf(values[values.length - 1]);
+
+            $('#panelTitle').text(data['country']);
+            $('#panelSub').text(data['count'] + (data['count'] === 1 ? ' concert' : ' concerts') +
+                (firstYear === lastYear ? ', ' + firstYear : ', ' + firstYear + ' to ' + lastYear));
+
+            const tbody = $('#tableData tbody').empty();
+            for (let i = 0; i < values.length; i++) {
+                const v = values[i];
+                tbody.append(
+                    $('<tr>')
+                        .append($('<td>').text(v['date']))
+                        .append($('<td>').text(v['tour']))
+                        .append($('<td>').text(v['city']))
+                );
+            }
+            $('#tableData').show();
+            $('#resetBtn').show();
+            $('#tableContainer').scrollTop(0);
+        }
+
+        function clearTable() {
+            $('#panelTitle').text('Concert list');
+            $('#panelSub').text('Click a purple country on the map (or a bar) to list its concerts by date and name.');
+            $('#tableData').hide();
+            $('#resetBtn').hide();
+        }
+
+        function selectCountry(name) {
+            selected = name;
+            if (mapReady) {
+                map.setFilter('country-selected', ['==', ['get', 'country'], name || '']);
+            }
+            if (name) { setTable(byCountry[name]); } else { clearTable(); }
+            drawYearChart();
+            drawCountryChart();
+        }
+
+        function createMap(countries) {
+            const mapboxAccessToken = 'pk.eyJ1IjoicHlhZS0xMjMiLCJhIjoiY211dWt1MWd2MDEyNjJ5cTNmZ3Azcms2cSJ9.CqWQpfaPmuxWYid74cQLeA';
+            mapboxgl.accessToken = mapboxAccessToken;
+            
+            for (let i = 0; i < countries.features.length; i++) {
+                const f = countries.features[i];
+                if (byCountry[f.properties.country]) {
+                    f.properties.shows = byCountry[f.properties.country]['count'];
+                } else {
+                    f.properties.shows = 0;
+                }
+            }
+
+            map = new mapboxgl.Map({
+                container: 'mainChart',
+                style: 'mapbox://styles/mapbox/light-v11',
+                center: [10, 25],
+                zoom: 1
+            });
+            map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), 'top-right');
+
+            map.on('load', function () {
+                map.fitBounds([[-170, -50], [180, 72]], { padding: 10, animate: false });
+
+                map.addSource('countries', { type: 'geojson', data: countries });
+                
+                map.addLayer({
+                    id: 'country-fill',
+                    type: 'fill',
+                    source: 'countries',
+                    paint: {
+                        'fill-color': ['step', ['get', 'shows'],
+                            colors[0], 3, colors[1], 6, colors[2], 10, colors[3], 30, colors[4]],
+                        'fill-opacity': 0.92
+                    }
+                });
+                map.addLayer({
+                    id: 'country-line',
+                    type: 'line',
+                    source: 'countries',
+                    paint: { 'line-color': '#ffffff', 'line-width': 0.6 }
+                });
+                
+                map.addLayer({
+                    id: 'country-selected',
+                    type: 'line',
+                    source: 'countries',
+                    filter: ['==', ['get', 'country'], ''],
+                    paint: { 'line-color': '#f472b6', 'line-width': 2.5 }
+                });
+                mapReady = true;
+
+                map.on('click', 'country-fill', function (e) {
+                    if (e.features.length > 0) {
+                        selectCountry(e.features[0].properties.country);
+                    }
+                });
+                map.on('mouseenter', 'country-fill', function () { map.getCanvas().style.cursor = 'pointer'; });
+                map.on('mouseleave', 'country-fill', function () { map.getCanvas().style.cursor = ''; });
+            });
+        }
+
+        function start(data, countries) {
+            allData = data;
+            
+            allData.sort((a, b) => b.count - a.count);
+
+            for (let i = 0; i < allData.length; i++) {
+                byCountry[allData[i]['country']] = allData[i];
+            }
+
+            let minY = 9999, maxY = 0;
+            for (let i = 0; i < allData.length; i++) {
+                for (let j = 0; j < allData[i]['value'].length; j++) {
+                    const y = yearOf(allData[i]['value'][j]);
+                    if (y < minY) minY = y;
+                    if (y > maxY) maxY = y;
+                }
+            }
+            for (let y = minY; y <= maxY; y++) years.push(y);
+
+            const total = createSummary();
+            $('#subtitle').text('Every BTS concert played so far: ' + total + ' concerts in ' + allData.length + ' countries and regions, ' + minY + ' to ' + maxY + '.');
+           
+            createLegend();
+            clearTable();
+            drawYearChart();
+            drawCountryChart();
+            createMap(countries);
+
+            countryChart.on('click', function (params) { 
+                if (!params.name.startsWith('Other')) {
+                    selectCountry(params.name); 
+                }
+            });
+            $('#resetBtn').on('click', function () { selectCountry(null); });
+           
+            function resizeAll() {
+                yearChart.resize(); 
+                countryChart.resize();
+                if (map) { map.resize(); }
+            }
+            $(window).on('resize', resizeAll);
+            
+            if (window.ResizeObserver) {
+                const ro = new ResizeObserver(resizeAll);
+                const yrEl = document.getElementById('yearChart');
+                const coEl = document.getElementById('countryChart');
+                if (yrEl) ro.observe(yrEl);
+                if (coEl) ro.observe(coEl);
+            }
+            setTimeout(resizeAll, 100); 
+        }
+
+        $.getJSON('concerts.json', function (data) {
+            $.getJSON('countries.geo.json', function (countries) {
+                start(data, countries);
+            }).fail(function() {
+                console.error("Error loading countries.geo.json");
+            });
+        }).fail(function() {
+            console.error("Error loading concerts.json");
+        });
+
+    </script>
+
+</body>
+
+</html>

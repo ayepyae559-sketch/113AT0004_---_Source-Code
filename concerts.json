@@ -1,0 +1,1502 @@
+[
+  {
+    "country": "United States",
+    "count": 62,
+    "value": [
+      {
+        "date": "2014-07-14",
+        "tour": "BTS 2014 <Show & Prove Concert>",
+        "city": "West Hollywood",
+        "venue": "LA Troubadour"
+      },
+      {
+        "date": "2015-07-16",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "New York",
+        "venue": "Best Buy Theater"
+      },
+      {
+        "date": "2015-07-18",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "Dallas",
+        "venue": "Verizon Theatre at Grand Prairie"
+      },
+      {
+        "date": "2015-07-24",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "Chicago",
+        "venue": "Rosemont Theatre"
+      },
+      {
+        "date": "2015-07-26",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "Los Angeles",
+        "venue": "Club Nokia"
+      },
+      {
+        "date": "2017-03-23",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Newark",
+        "venue": "Prudential Center"
+      },
+      {
+        "date": "2017-03-24",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Newark",
+        "venue": "Prudential Center"
+      },
+      {
+        "date": "2017-03-29",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Chicago",
+        "venue": "Allstate Arena"
+      },
+      {
+        "date": "2017-04-01",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Anaheim",
+        "venue": "Honda Center"
+      },
+      {
+        "date": "2017-04-02",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Anaheim",
+        "venue": "Honda Center"
+      },
+      {
+        "date": "2018-09-05",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Los Angeles",
+        "venue": "Staples Center"
+      },
+      {
+        "date": "2018-09-06",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Los Angeles",
+        "venue": "Staples Center"
+      },
+      {
+        "date": "2018-09-08",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Los Angeles",
+        "venue": "Staples Center"
+      },
+      {
+        "date": "2018-09-09",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Los Angeles",
+        "venue": "Staples Center"
+      },
+      {
+        "date": "2018-09-12",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Oakland",
+        "venue": "Oracle Arena"
+      },
+      {
+        "date": "2018-09-15",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Fort Worth",
+        "venue": "Fort Worth Convention Center"
+      },
+      {
+        "date": "2018-09-16",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Fort Worth",
+        "venue": "Fort Worth Convention Center"
+      },
+      {
+        "date": "2018-09-28",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Newark",
+        "venue": "Prudential Center"
+      },
+      {
+        "date": "2018-09-29",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Newark",
+        "venue": "Prudential Center"
+      },
+      {
+        "date": "2018-10-02",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Chicago",
+        "venue": "United Center"
+      },
+      {
+        "date": "2018-10-03",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Chicago",
+        "venue": "United Center"
+      },
+      {
+        "date": "2018-10-06",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "New York",
+        "venue": "Citi Field"
+      },
+      {
+        "date": "2019-05-04",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "Pasadena",
+        "venue": "Rose Bowl"
+      },
+      {
+        "date": "2019-05-05",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "Pasadena",
+        "venue": "Rose Bowl"
+      },
+      {
+        "date": "2019-05-11",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "Chicago",
+        "venue": "Soldier Field"
+      },
+      {
+        "date": "2019-05-12",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "Chicago",
+        "venue": "Soldier Field"
+      },
+      {
+        "date": "2019-05-18",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "East Rutherford",
+        "venue": "MetLife Stadium"
+      },
+      {
+        "date": "2019-05-19",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "East Rutherford",
+        "venue": "MetLife Stadium"
+      },
+      {
+        "date": "2021-11-27",
+        "tour": "BTS Permission to Dance on Stage",
+        "city": "Inglewood",
+        "venue": "SoFi Stadium"
+      },
+      {
+        "date": "2021-11-28",
+        "tour": "BTS Permission to Dance on Stage",
+        "city": "Inglewood",
+        "venue": "SoFi Stadium"
+      },
+      {
+        "date": "2021-12-01",
+        "tour": "BTS Permission to Dance on Stage",
+        "city": "Inglewood",
+        "venue": "SoFi Stadium"
+      },
+      {
+        "date": "2021-12-02",
+        "tour": "BTS Permission to Dance on Stage",
+        "city": "Inglewood",
+        "venue": "SoFi Stadium"
+      },
+      {
+        "date": "2022-04-08",
+        "tour": "BTS Permission to Dance on Stage",
+        "city": "Las Vegas",
+        "venue": "Allegiant Stadium"
+      },
+      {
+        "date": "2022-04-09",
+        "tour": "BTS Permission to Dance on Stage",
+        "city": "Las Vegas",
+        "venue": "Allegiant Stadium"
+      },
+      {
+        "date": "2022-04-15",
+        "tour": "BTS Permission to Dance on Stage",
+        "city": "Las Vegas",
+        "venue": "Allegiant Stadium"
+      },
+      {
+        "date": "2022-04-16",
+        "tour": "BTS Permission to Dance on Stage",
+        "city": "Las Vegas",
+        "venue": "Allegiant Stadium"
+      },
+      {
+        "date": "2026-04-25",
+        "tour": "Arirang World Tour",
+        "city": "Tampa",
+        "venue": "Raymond James Stadium"
+      },
+      {
+        "date": "2026-04-26",
+        "tour": "Arirang World Tour",
+        "city": "Tampa",
+        "venue": "Raymond James Stadium"
+      },
+      {
+        "date": "2026-04-28",
+        "tour": "Arirang World Tour",
+        "city": "Tampa",
+        "venue": "Raymond James Stadium"
+      },
+      {
+        "date": "2026-05-02",
+        "tour": "Arirang World Tour",
+        "city": "El Paso",
+        "venue": "Sun Bowl"
+      },
+      {
+        "date": "2026-05-03",
+        "tour": "Arirang World Tour",
+        "city": "El Paso",
+        "venue": "Sun Bowl"
+      },
+      {
+        "date": "2026-05-16",
+        "tour": "Arirang World Tour",
+        "city": "Stanford",
+        "venue": "Stanford Stadium"
+      },
+      {
+        "date": "2026-05-17",
+        "tour": "Arirang World Tour",
+        "city": "Stanford",
+        "venue": "Stanford Stadium"
+      },
+      {
+        "date": "2026-05-19",
+        "tour": "Arirang World Tour",
+        "city": "Stanford",
+        "venue": "Stanford Stadium"
+      },
+      {
+        "date": "2026-05-23",
+        "tour": "Arirang World Tour",
+        "city": "Las Vegas",
+        "venue": "Allegiant Stadium"
+      },
+      {
+        "date": "2026-05-24",
+        "tour": "Arirang World Tour",
+        "city": "Las Vegas",
+        "venue": "Allegiant Stadium"
+      },
+      {
+        "date": "2026-05-27",
+        "tour": "Arirang World Tour",
+        "city": "Las Vegas",
+        "venue": "Allegiant Stadium"
+      },
+      {
+        "date": "2026-05-28",
+        "tour": "Arirang World Tour",
+        "city": "Las Vegas",
+        "venue": "Allegiant Stadium"
+      },
+      {
+        "date": "2026-08-01",
+        "tour": "Arirang World Tour",
+        "city": "East Rutherford",
+        "venue": "MetLife Stadium"
+      },
+      {
+        "date": "2026-08-02",
+        "tour": "Arirang World Tour",
+        "city": "East Rutherford",
+        "venue": "MetLife Stadium"
+      },
+      {
+        "date": "2026-08-05",
+        "tour": "Arirang World Tour",
+        "city": "Foxborough",
+        "venue": "Gillette Stadium"
+      },
+      {
+        "date": "2026-08-06",
+        "tour": "Arirang World Tour",
+        "city": "Foxborough",
+        "venue": "Gillette Stadium"
+      },
+      {
+        "date": "2026-08-10",
+        "tour": "Arirang World Tour",
+        "city": "Baltimore",
+        "venue": "M&T Bank Stadium"
+      },
+      {
+        "date": "2026-08-11",
+        "tour": "Arirang World Tour",
+        "city": "Baltimore",
+        "venue": "M&T Bank Stadium"
+      },
+      {
+        "date": "2026-08-15",
+        "tour": "Arirang World Tour",
+        "city": "Arlington",
+        "venue": "AT&T Stadium"
+      },
+      {
+        "date": "2026-08-16",
+        "tour": "Arirang World Tour",
+        "city": "Arlington",
+        "venue": "AT&T Stadium"
+      },
+      {
+        "date": "2026-08-27",
+        "tour": "Arirang World Tour",
+        "city": "Chicago",
+        "venue": "Soldier Field"
+      },
+      {
+        "date": "2026-08-28",
+        "tour": "Arirang World Tour",
+        "city": "Chicago",
+        "venue": "Soldier Field"
+      },
+      {
+        "date": "2026-09-01",
+        "tour": "Arirang World Tour",
+        "city": "Inglewood",
+        "venue": "SoFi Stadium"
+      },
+      {
+        "date": "2026-09-02",
+        "tour": "Arirang World Tour",
+        "city": "Inglewood",
+        "venue": "SoFi Stadium"
+      },
+      {
+        "date": "2026-09-05",
+        "tour": "Arirang World Tour",
+        "city": "Inglewood",
+        "venue": "SoFi Stadium"
+      },
+      {
+        "date": "2026-09-06",
+        "tour": "Arirang World Tour",
+        "city": "Inglewood",
+        "venue": "SoFi Stadium"
+      }
+    ]
+  },
+  {
+    "country": "Japan",
+    "count": 50,
+    "value": [
+      {
+        "date": "2014-11-13",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "Kobe",
+        "venue": "Kobe Kokusai Hall"
+      },
+      {
+        "date": "2014-11-14",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "Kobe",
+        "venue": "Kobe Kokusai Hall"
+      },
+      {
+        "date": "2014-11-16",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "Tokyo",
+        "venue": "Tokyo International Forum"
+      },
+      {
+        "date": "2015-02-10",
+        "tour": "Wake Up: Open Your Eyes Japan Tour",
+        "city": "Chiba",
+        "venue": "Makuhari Messe Event Hall"
+      },
+      {
+        "date": "2015-02-11",
+        "tour": "Wake Up: Open Your Eyes Japan Tour",
+        "city": "Chiba",
+        "venue": "Makuhari Messe Event Hall"
+      },
+      {
+        "date": "2015-02-13",
+        "tour": "Wake Up: Open Your Eyes Japan Tour",
+        "city": "Osaka",
+        "venue": "Festival Hall"
+      },
+      {
+        "date": "2015-02-14",
+        "tour": "Wake Up: Open Your Eyes Japan Tour",
+        "city": "Osaka",
+        "venue": "Festival Hall"
+      },
+      {
+        "date": "2015-02-17",
+        "tour": "Wake Up: Open Your Eyes Japan Tour",
+        "city": "Nagoya",
+        "venue": "Zepp Nagoya"
+      },
+      {
+        "date": "2015-02-19",
+        "tour": "Wake Up: Open Your Eyes Japan Tour",
+        "city": "Fukuoka",
+        "venue": "Zepp Fukuoka"
+      },
+      {
+        "date": "2015-12-08",
+        "tour": "The Most Beautiful Moment in Life On Stage",
+        "city": "Yokohama",
+        "venue": "Yokohama Arena"
+      },
+      {
+        "date": "2015-12-09",
+        "tour": "The Most Beautiful Moment in Life On Stage",
+        "city": "Yokohama",
+        "venue": "Yokohama Arena"
+      },
+      {
+        "date": "2015-12-26",
+        "tour": "The Most Beautiful Moment in Life On Stage",
+        "city": "Kobe",
+        "venue": "World Memorial Hall"
+      },
+      {
+        "date": "2016-03-22",
+        "tour": "The Most Beautiful Moment in Life On Stage",
+        "city": "Kobe",
+        "venue": "World Memorial Hall"
+      },
+      {
+        "date": "2016-03-23",
+        "tour": "The Most Beautiful Moment in Life On Stage",
+        "city": "Kobe",
+        "venue": "World Memorial Hall"
+      },
+      {
+        "date": "2016-07-12",
+        "tour": "The Most Beautiful Moment in Life On Stage: Epilogue",
+        "city": "Osaka",
+        "venue": "Osaka-jō Hall"
+      },
+      {
+        "date": "2016-07-13",
+        "tour": "The Most Beautiful Moment in Life On Stage: Epilogue",
+        "city": "Osaka",
+        "venue": "Osaka-jō Hall"
+      },
+      {
+        "date": "2016-07-15",
+        "tour": "The Most Beautiful Moment in Life On Stage: Epilogue",
+        "city": "Nagoya",
+        "venue": "Nippon Gaishi Hall"
+      },
+      {
+        "date": "2016-07-16",
+        "tour": "The Most Beautiful Moment in Life On Stage: Epilogue",
+        "city": "Nagoya",
+        "venue": "Nippon Gaishi Hall"
+      },
+      {
+        "date": "2016-08-13",
+        "tour": "The Most Beautiful Moment in Life On Stage: Epilogue",
+        "city": "Tokyo",
+        "venue": "Yoyogi National Gymnasium"
+      },
+      {
+        "date": "2016-08-14",
+        "tour": "The Most Beautiful Moment in Life On Stage: Epilogue",
+        "city": "Tokyo",
+        "venue": "Yoyogi National Gymnasium"
+      },
+      {
+        "date": "2017-05-30",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Osaka",
+        "venue": "Osaka-jō Hall"
+      },
+      {
+        "date": "2017-05-31",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Osaka",
+        "venue": "Osaka-jō Hall"
+      },
+      {
+        "date": "2017-06-01",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Osaka",
+        "venue": "Osaka-jō Hall"
+      },
+      {
+        "date": "2017-06-07",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Hiroshima",
+        "venue": "Hiroshima Green Arena"
+      },
+      {
+        "date": "2017-06-14",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Nagoya",
+        "venue": "Nippon Gaishi Hall"
+      },
+      {
+        "date": "2017-06-15",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Nagoya",
+        "venue": "Nippon Gaishi Hall"
+      },
+      {
+        "date": "2017-06-20",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Saitama",
+        "venue": "Saitama Super Arena"
+      },
+      {
+        "date": "2017-06-21",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Saitama",
+        "venue": "Saitama Super Arena"
+      },
+      {
+        "date": "2017-06-22",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Saitama",
+        "venue": "Saitama Super Arena"
+      },
+      {
+        "date": "2017-06-24",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Fukuoka",
+        "venue": "Marine Messe Fukuoka"
+      },
+      {
+        "date": "2017-06-25",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Fukuoka",
+        "venue": "Marine Messe Fukuoka"
+      },
+      {
+        "date": "2017-07-01",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Sapporo",
+        "venue": "Makomanai Ice Arena"
+      },
+      {
+        "date": "2017-07-02",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Sapporo",
+        "venue": "Makomanai Ice Arena"
+      },
+      {
+        "date": "2017-10-14",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Osaka",
+        "venue": "Kyocera Dome"
+      },
+      {
+        "date": "2017-10-15",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Osaka",
+        "venue": "Kyocera Dome"
+      },
+      {
+        "date": "2018-11-13",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Tokyo",
+        "venue": "Tokyo Dome"
+      },
+      {
+        "date": "2018-11-14",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Tokyo",
+        "venue": "Tokyo Dome"
+      },
+      {
+        "date": "2018-11-21",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Osaka",
+        "venue": "Kyocera Dome Osaka"
+      },
+      {
+        "date": "2018-11-23",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Osaka",
+        "venue": "Kyocera Dome Osaka"
+      },
+      {
+        "date": "2018-11-24",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Osaka",
+        "venue": "Kyocera Dome Osaka"
+      },
+      {
+        "date": "2019-01-12",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Nagoya",
+        "venue": "Nagoya Dome"
+      },
+      {
+        "date": "2019-01-13",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Nagoya",
+        "venue": "Nagoya Dome"
+      },
+      {
+        "date": "2019-02-16",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Fukuoka",
+        "venue": "Fukuoka Yahuoku! Dome"
+      },
+      {
+        "date": "2019-02-17",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Fukuoka",
+        "venue": "Fukuoka Yahuoku! Dome"
+      },
+      {
+        "date": "2019-07-06",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "Osaka",
+        "venue": "Yanmar Stadium Nagai"
+      },
+      {
+        "date": "2019-07-07",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "Osaka",
+        "venue": "Yanmar Stadium Nagai"
+      },
+      {
+        "date": "2019-07-13",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "Shizuoka",
+        "venue": "Shizuoka Stadium"
+      },
+      {
+        "date": "2019-07-14",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "Shizuoka",
+        "venue": "Shizuoka Stadium"
+      },
+      {
+        "date": "2026-04-17",
+        "tour": "Arirang World Tour",
+        "city": "Tokyo",
+        "venue": "Tokyo Dome"
+      },
+      {
+        "date": "2026-04-18",
+        "tour": "Arirang World Tour",
+        "city": "Tokyo",
+        "venue": "Tokyo Dome"
+      }
+    ]
+  },
+  {
+    "country": "South Korea",
+    "count": 30,
+    "value": [
+      {
+        "date": "2014-10-17",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "Seoul",
+        "venue": "AX-Korea"
+      },
+      {
+        "date": "2014-10-18",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "Seoul",
+        "venue": "AX-Korea"
+      },
+      {
+        "date": "2014-10-19",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "Seoul",
+        "venue": "AX-Korea"
+      },
+      {
+        "date": "2015-03-28",
+        "tour": "BTS Live Trilogy Episode I: BTS Begins",
+        "city": "Seoul",
+        "venue": "Olympic Hall"
+      },
+      {
+        "date": "2015-03-29",
+        "tour": "BTS Live Trilogy Episode I: BTS Begins",
+        "city": "Seoul",
+        "venue": "Olympic Hall"
+      },
+      {
+        "date": "2015-11-27",
+        "tour": "The Most Beautiful Moment in Life On Stage",
+        "city": "Seoul",
+        "venue": "SK Olympic Handball Gymnasium"
+      },
+      {
+        "date": "2015-11-28",
+        "tour": "The Most Beautiful Moment in Life On Stage",
+        "city": "Seoul",
+        "venue": "SK Olympic Handball Gymnasium"
+      },
+      {
+        "date": "2015-11-29",
+        "tour": "The Most Beautiful Moment in Life On Stage",
+        "city": "Seoul",
+        "venue": "SK Olympic Handball Gymnasium"
+      },
+      {
+        "date": "2016-05-07",
+        "tour": "The Most Beautiful Moment in Life On Stage: Epilogue",
+        "city": "Seoul",
+        "venue": "Olympic Gymnastics Arena"
+      },
+      {
+        "date": "2016-05-08",
+        "tour": "The Most Beautiful Moment in Life On Stage: Epilogue",
+        "city": "Seoul",
+        "venue": "Olympic Gymnastics Arena"
+      },
+      {
+        "date": "2017-02-18",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Seoul",
+        "venue": "Gocheok Sky Dome"
+      },
+      {
+        "date": "2017-02-19",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Seoul",
+        "venue": "Gocheok Sky Dome"
+      },
+      {
+        "date": "2017-12-08",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Seoul",
+        "venue": "Gocheok Sky Dome"
+      },
+      {
+        "date": "2017-12-09",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Seoul",
+        "venue": "Gocheok Sky Dome"
+      },
+      {
+        "date": "2017-12-10",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Seoul",
+        "venue": "Gocheok Sky Dome"
+      },
+      {
+        "date": "2018-08-25",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Seoul",
+        "venue": "Seoul Olympic Stadium"
+      },
+      {
+        "date": "2018-08-26",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Seoul",
+        "venue": "Seoul Olympic Stadium"
+      },
+      {
+        "date": "2019-10-26",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "Seoul",
+        "venue": "Seoul Olympic Stadium"
+      },
+      {
+        "date": "2019-10-27",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "Seoul",
+        "venue": "Seoul Olympic Stadium"
+      },
+      {
+        "date": "2019-10-29",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "Seoul",
+        "venue": "Seoul Olympic Stadium"
+      },
+      {
+        "date": "2022-03-10",
+        "tour": "BTS Permission to Dance on Stage",
+        "city": "Seoul",
+        "venue": "Seoul Olympic Stadium"
+      },
+      {
+        "date": "2022-03-12",
+        "tour": "BTS Permission to Dance on Stage",
+        "city": "Seoul",
+        "venue": "Seoul Olympic Stadium"
+      },
+      {
+        "date": "2022-03-13",
+        "tour": "BTS Permission to Dance on Stage",
+        "city": "Seoul",
+        "venue": "Seoul Olympic Stadium"
+      },
+      {
+        "date": "2022-10-15",
+        "tour": "BTS <Yet To Come> in Busan",
+        "city": "Busan",
+        "venue": "Busan Asiad Main Stadium"
+      },
+      {
+        "date": "2026-03-21",
+        "tour": "BTS The Comeback Live | Arirang",
+        "city": "Seoul",
+        "venue": "Gwanghwamun Square"
+      },
+      {
+        "date": "2026-04-09",
+        "tour": "Arirang World Tour",
+        "city": "Goyang",
+        "venue": "Goyang Stadium"
+      },
+      {
+        "date": "2026-04-11",
+        "tour": "Arirang World Tour",
+        "city": "Goyang",
+        "venue": "Goyang Stadium"
+      },
+      {
+        "date": "2026-04-12",
+        "tour": "Arirang World Tour",
+        "city": "Goyang",
+        "venue": "Goyang Stadium"
+      },
+      {
+        "date": "2026-06-12",
+        "tour": "Arirang World Tour",
+        "city": "Busan",
+        "venue": "Busan Asiad Main Stadium"
+      },
+      {
+        "date": "2026-06-13",
+        "tour": "Arirang World Tour",
+        "city": "Busan",
+        "venue": "Busan Asiad Main Stadium"
+      }
+    ]
+  },
+  {
+    "country": "Thailand",
+    "count": 7,
+    "value": [
+      {
+        "date": "2014-12-20",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "Bangkok",
+        "venue": "CWN Hall"
+      },
+      {
+        "date": "2015-08-08",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "Bangkok",
+        "venue": "Thunder Dome"
+      },
+      {
+        "date": "2016-08-06",
+        "tour": "The Most Beautiful Moment in Life On Stage: Epilogue",
+        "city": "Bangkok",
+        "venue": "Indoor Stadium Huamark"
+      },
+      {
+        "date": "2017-04-22",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Bangkok",
+        "venue": "Impact Arena"
+      },
+      {
+        "date": "2017-04-23",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Bangkok",
+        "venue": "Impact Arena"
+      },
+      {
+        "date": "2019-04-06",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Bangkok",
+        "venue": "Rajamangala National Stadium"
+      },
+      {
+        "date": "2019-04-07",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Bangkok",
+        "venue": "Rajamangala National Stadium"
+      }
+    ]
+  },
+  {
+    "country": "Hong Kong",
+    "count": 7,
+    "value": [
+      {
+        "date": "2015-08-29",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "Hong Kong",
+        "venue": "AsiaWorld-Arena"
+      },
+      {
+        "date": "2017-05-13",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Hong Kong",
+        "venue": "AsiaWorld–Expo"
+      },
+      {
+        "date": "2017-05-14",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Hong Kong",
+        "venue": "AsiaWorld–Expo"
+      },
+      {
+        "date": "2019-03-20",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Hong Kong",
+        "venue": "AsiaWorld–Expo"
+      },
+      {
+        "date": "2019-03-21",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Hong Kong",
+        "venue": "AsiaWorld–Expo"
+      },
+      {
+        "date": "2019-03-23",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Hong Kong",
+        "venue": "AsiaWorld–Expo"
+      },
+      {
+        "date": "2019-03-24",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Hong Kong",
+        "venue": "AsiaWorld–Expo"
+      }
+    ]
+  },
+  {
+    "country": "Taiwan",
+    "count": 6,
+    "value": [
+      {
+        "date": "2015-03-08",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "New Taipei City",
+        "venue": "New Taipei City Exhibition Hall"
+      },
+      {
+        "date": "2016-06-09",
+        "tour": "The Most Beautiful Moment in Life On Stage: Epilogue",
+        "city": "New Taipei City",
+        "venue": "Xinzhuang Gymnasium"
+      },
+      {
+        "date": "2017-10-21",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Taoyuan",
+        "venue": "NTSU Arena"
+      },
+      {
+        "date": "2017-10-22",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Taoyuan",
+        "venue": "NTSU Arena"
+      },
+      {
+        "date": "2018-12-08",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Taoyuan",
+        "venue": "Taoyuan International Baseball Stadium"
+      },
+      {
+        "date": "2018-12-09",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Taoyuan",
+        "venue": "Taoyuan International Baseball Stadium"
+      }
+    ]
+  },
+  {
+    "country": "Chile",
+    "count": 6,
+    "value": [
+      {
+        "date": "2015-08-02",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "Santiago",
+        "venue": "Movistar Arena"
+      },
+      {
+        "date": "2017-03-11",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Santiago",
+        "venue": "Movistar Arena"
+      },
+      {
+        "date": "2017-03-12",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Santiago",
+        "venue": "Movistar Arena"
+      },
+      {
+        "date": "2026-10-14",
+        "tour": "Arirang World Tour",
+        "city": "Santiago",
+        "venue": "Estadio Nacional Julio Martínez Prádanos"
+      },
+      {
+        "date": "2026-10-16",
+        "tour": "Arirang World Tour",
+        "city": "Santiago",
+        "venue": "Estadio Nacional Julio Martínez Prádanos"
+      },
+      {
+        "date": "2026-10-17",
+        "tour": "Arirang World Tour",
+        "city": "Santiago",
+        "venue": "Estadio Nacional Julio Martínez Prádanos"
+      }
+    ]
+  },
+  {
+    "country": "United Kingdom",
+    "count": 6,
+    "value": [
+      {
+        "date": "2018-10-09",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "London",
+        "venue": "The O2 Arena"
+      },
+      {
+        "date": "2018-10-10",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "London",
+        "venue": "The O2 Arena"
+      },
+      {
+        "date": "2019-06-01",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "London",
+        "venue": "Wembley Stadium"
+      },
+      {
+        "date": "2019-06-02",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "London",
+        "venue": "Wembley Stadium"
+      },
+      {
+        "date": "2026-07-06",
+        "tour": "Arirang World Tour",
+        "city": "London",
+        "venue": "Tottenham Hotspur Stadium"
+      },
+      {
+        "date": "2026-07-07",
+        "tour": "Arirang World Tour",
+        "city": "London",
+        "venue": "Tottenham Hotspur Stadium"
+      }
+    ]
+  },
+  {
+    "country": "France",
+    "count": 6,
+    "value": [
+      {
+        "date": "2018-10-19",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Paris",
+        "venue": "Accor Arena"
+      },
+      {
+        "date": "2018-10-20",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Paris",
+        "venue": "Accor Arena"
+      },
+      {
+        "date": "2019-06-07",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "Paris",
+        "venue": "Stade de France"
+      },
+      {
+        "date": "2019-06-08",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "Paris",
+        "venue": "Stade de France"
+      },
+      {
+        "date": "2026-07-17",
+        "tour": "Arirang World Tour",
+        "city": "Paris",
+        "venue": "Stade de France"
+      },
+      {
+        "date": "2026-07-18",
+        "tour": "Arirang World Tour",
+        "city": "Paris",
+        "venue": "Stade de France"
+      }
+    ]
+  },
+  {
+    "country": "Brazil",
+    "count": 5,
+    "value": [
+      {
+        "date": "2015-07-31",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "São Paulo",
+        "venue": "Espaço das Américas"
+      },
+      {
+        "date": "2017-03-19",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "São Paulo",
+        "venue": "Citibank Hall"
+      },
+      {
+        "date": "2017-03-20",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "São Paulo",
+        "venue": "Citibank Hall"
+      },
+      {
+        "date": "2019-05-25",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "São Paulo",
+        "venue": "Allianz Parque"
+      },
+      {
+        "date": "2019-05-26",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "São Paulo",
+        "venue": "Allianz Parque"
+      }
+    ]
+  },
+  {
+    "country": "Canada",
+    "count": 5,
+    "value": [
+      {
+        "date": "2018-09-20",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Hamilton",
+        "venue": "FirstOntario Centre"
+      },
+      {
+        "date": "2018-09-22",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Hamilton",
+        "venue": "FirstOntario Centre"
+      },
+      {
+        "date": "2018-09-23",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Hamilton",
+        "venue": "FirstOntario Centre"
+      },
+      {
+        "date": "2026-08-22",
+        "tour": "Arirang World Tour",
+        "city": "Toronto",
+        "venue": "Rogers Stadium"
+      },
+      {
+        "date": "2026-08-23",
+        "tour": "Arirang World Tour",
+        "city": "Toronto",
+        "venue": "Rogers Stadium"
+      }
+    ]
+  },
+  {
+    "country": "Philippines",
+    "count": 4,
+    "value": [
+      {
+        "date": "2014-12-07",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "Manila",
+        "venue": "Mall of Asia Arena"
+      },
+      {
+        "date": "2016-07-30",
+        "tour": "The Most Beautiful Moment in Life On Stage: Epilogue",
+        "city": "Manila",
+        "venue": "SM Mall of Asia Arena"
+      },
+      {
+        "date": "2017-05-06",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Manila",
+        "venue": "SM Mall of Asia Arena"
+      },
+      {
+        "date": "2017-05-07",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Manila",
+        "venue": "SM Mall of Asia Arena"
+      }
+    ]
+  },
+  {
+    "country": "Mexico",
+    "count": 4,
+    "value": [
+      {
+        "date": "2015-07-29",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "Mexico City",
+        "venue": "Pabellon Oeste"
+      },
+      {
+        "date": "2026-05-07",
+        "tour": "Arirang World Tour",
+        "city": "Mexico City",
+        "venue": "Estadio GNP Seguros"
+      },
+      {
+        "date": "2026-05-09",
+        "tour": "Arirang World Tour",
+        "city": "Mexico City",
+        "venue": "Estadio GNP Seguros"
+      },
+      {
+        "date": "2026-05-10",
+        "tour": "Arirang World Tour",
+        "city": "Mexico City",
+        "venue": "Estadio GNP Seguros"
+      }
+    ]
+  },
+  {
+    "country": "Germany",
+    "count": 4,
+    "value": [
+      {
+        "date": "2018-10-16",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Berlin",
+        "venue": "Mercedes-Benz Arena"
+      },
+      {
+        "date": "2018-10-17",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Berlin",
+        "venue": "Mercedes-Benz Arena"
+      },
+      {
+        "date": "2026-07-11",
+        "tour": "Arirang World Tour",
+        "city": "Munich",
+        "venue": "Allianz Arena"
+      },
+      {
+        "date": "2026-07-12",
+        "tour": "Arirang World Tour",
+        "city": "Munich",
+        "venue": "Allianz Arena"
+      }
+    ]
+  },
+  {
+    "country": "Australia",
+    "count": 3,
+    "value": [
+      {
+        "date": "2015-07-10",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "Sydney",
+        "venue": "Roundhouse"
+      },
+      {
+        "date": "2015-07-12",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "Melbourne",
+        "venue": "Plenary 1"
+      },
+      {
+        "date": "2017-05-26",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Sydney",
+        "venue": "Qudos Bank Arena"
+      }
+    ]
+  },
+  {
+    "country": "Peru",
+    "count": 3,
+    "value": [
+      {
+        "date": "2026-10-07",
+        "tour": "Arirang World Tour",
+        "city": "Lima",
+        "venue": "Estadio San Marcos"
+      },
+      {
+        "date": "2026-10-09",
+        "tour": "Arirang World Tour",
+        "city": "Lima",
+        "venue": "Estadio San Marcos"
+      },
+      {
+        "date": "2026-10-10",
+        "tour": "Arirang World Tour",
+        "city": "Lima",
+        "venue": "Estadio San Marcos"
+      }
+    ]
+  },
+  {
+    "country": "Singapore",
+    "count": 2,
+    "value": [
+      {
+        "date": "2014-12-13",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "Singapore",
+        "venue": "The Star Performing Arts Centre"
+      },
+      {
+        "date": "2019-01-19",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Singapore",
+        "venue": "National Stadium"
+      }
+    ]
+  },
+  {
+    "country": "Macau",
+    "count": 2,
+    "value": [
+      {
+        "date": "2016-06-18",
+        "tour": "The Most Beautiful Moment in Life On Stage: Epilogue",
+        "city": "Macau",
+        "venue": "Studio City Event Center"
+      },
+      {
+        "date": "2017-11-04",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Macau",
+        "venue": "Cotai Arena"
+      }
+    ]
+  },
+  {
+    "country": "China",
+    "count": 2,
+    "value": [
+      {
+        "date": "2016-07-02",
+        "tour": "The Most Beautiful Moment in Life On Stage: Epilogue",
+        "city": "Nanjing",
+        "venue": "Wutaishan Sports Center"
+      },
+      {
+        "date": "2016-07-23",
+        "tour": "The Most Beautiful Moment in Life On Stage: Epilogue",
+        "city": "Beijing",
+        "venue": "Capital Indoor Stadium"
+      }
+    ]
+  },
+  {
+    "country": "Spain",
+    "count": 2,
+    "value": [
+      {
+        "date": "2026-06-26",
+        "tour": "Arirang World Tour",
+        "city": "Madrid",
+        "venue": "Riyadh Air Metropolitano"
+      },
+      {
+        "date": "2026-06-27",
+        "tour": "Arirang World Tour",
+        "city": "Madrid",
+        "venue": "Riyadh Air Metropolitano"
+      }
+    ]
+  },
+  {
+    "country": "Belgium",
+    "count": 2,
+    "value": [
+      {
+        "date": "2026-07-01",
+        "tour": "Arirang World Tour",
+        "city": "Brussels",
+        "venue": "King Baudouin Stadium"
+      },
+      {
+        "date": "2026-07-02",
+        "tour": "Arirang World Tour",
+        "city": "Brussels",
+        "venue": "King Baudouin Stadium"
+      }
+    ]
+  },
+  {
+    "country": "Colombia",
+    "count": 2,
+    "value": [
+      {
+        "date": "2026-10-02",
+        "tour": "Arirang World Tour",
+        "city": "Bogotá",
+        "venue": "Estadio El Campín"
+      },
+      {
+        "date": "2026-10-03",
+        "tour": "Arirang World Tour",
+        "city": "Bogotá",
+        "venue": "Estadio El Campín"
+      }
+    ]
+  },
+  {
+    "country": "Malaysia",
+    "count": 1,
+    "value": [
+      {
+        "date": "2015-06-06",
+        "tour": "BTS Live Trilogy Episode II: The Red Bullet",
+        "city": "Kuala Lumpur",
+        "venue": "Mega Star Arena"
+      }
+    ]
+  },
+  {
+    "country": "Indonesia",
+    "count": 1,
+    "value": [
+      {
+        "date": "2017-04-29",
+        "tour": "BTS Live Trilogy Episode III: The Wings Tour",
+        "city": "Jakarta",
+        "venue": "Indonesia Convention Exhibition"
+      }
+    ]
+  },
+  {
+    "country": "Netherlands",
+    "count": 1,
+    "value": [
+      {
+        "date": "2018-10-13",
+        "tour": "BTS World Tour: Love Yourself",
+        "city": "Amsterdam",
+        "venue": "Ziggo Dome"
+      }
+    ]
+  },
+  {
+    "country": "Saudi Arabia",
+    "count": 1,
+    "value": [
+      {
+        "date": "2019-10-11",
+        "tour": "BTS World Tour: Love Yourself: Speak Yourself",
+        "city": "Riyadh",
+        "venue": "King Fahd International Stadium"
+      }
+    ]
+  }
+]
